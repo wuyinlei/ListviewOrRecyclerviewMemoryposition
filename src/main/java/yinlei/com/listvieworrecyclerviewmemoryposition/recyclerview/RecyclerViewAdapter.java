@@ -44,6 +44,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.mTextView.setText(mStrings.get(position));
     }
 
+    //默认第几项
     private int mPosition = 0;
 
     public void setPosition(int position) {

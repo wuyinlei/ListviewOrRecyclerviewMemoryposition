@@ -69,7 +69,7 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     //默认是第几项
-    private int mPosition = 0;
+    private int mPosition = 3;
 
     public void setPosition(int position) {
         mPosition = position;

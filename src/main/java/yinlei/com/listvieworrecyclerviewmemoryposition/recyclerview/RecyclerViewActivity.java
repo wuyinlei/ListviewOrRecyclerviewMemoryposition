@@ -35,8 +35,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mAdapter.setOnItemClickListener(new RecyclerViewAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position, String s) {
-                mAdapter.setPosition(position);
-                mAdapter.notifyDataSetChanged();
+                mAdapter.setPosition(position); //传递当前的点击位置
+                mAdapter.notifyDataSetChanged(); //通知刷新
             }
         });
     }

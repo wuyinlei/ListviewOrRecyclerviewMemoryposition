@@ -32,8 +32,8 @@ public class ListViewActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                mAdapter.setPosition(i);
-                mAdapter.notifyDataSetChanged();
+                mAdapter.setPosition(i);  //把当前点击的位置传递过去
+                mAdapter.notifyDataSetChanged();  //通知listview刷新UI
             }
         });
     }
