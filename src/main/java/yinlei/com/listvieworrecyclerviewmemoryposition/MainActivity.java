@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import yinlei.com.listvieworrecyclerviewmemoryposition.listview.ListViewActivity;
+import yinlei.com.listvieworrecyclerviewmemoryposition.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void recycler_view_memory_position(View view) {
-
+        startActivity(new Intent(this, RecyclerViewActivity.class));
     }
 }
